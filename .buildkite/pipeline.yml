@@ -1,4 +1,7 @@
 ---
 steps:
+  - label: ":pipeline: Pipeline upload"
+    command: buildkite-agent pipeline upload .buildkit/pipeline.yml
+
   - label: "Example Test"
     command: echo "Hello!"
